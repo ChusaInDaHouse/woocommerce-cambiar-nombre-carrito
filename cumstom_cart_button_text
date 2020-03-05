@@ -1,0 +1,9 @@
+/*cambiar el nombre del carrito cambiamos 'Añadir' por el nombre que queramos poner*/
+
+add_filter( 'woocommerce_product_single_add_to_cart_text', 'woo_custom_cart_button_text' );
+ 
+function woo_custom_cart_button_text() {
+ 
+ return __( 'Añadir', 'woocommerce' );
+ 
+}
